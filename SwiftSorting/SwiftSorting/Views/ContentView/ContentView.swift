@@ -10,11 +10,18 @@ import Combine
 
 struct ContentView: View {
     
+    // MARK: - Properties
+    
     @ObservedObject var viewModel: SortViewModel = SortViewModel()
+    
+    // MARK: - Body
     
     var body: some View {
         NavigationStack {
             VStack {
+                
+                // MARK: - Input
+                
                 HStack {
                     TextField(viewModel.textFieldPlaceholder, text: $viewModel.currentText)
                         .keyboardType(.numberPad)
@@ -27,23 +34,56 @@ struct ContentView: View {
                     
                 }.padding(.horizontal)
                 
-                LazyHStack {
-                    ForEach(viewModel.array) { item in
-                        Text("\(item.value)")
+                // MARK: - Menu
+                
+                HStack {
+                    Button {
+                        print("start")
+                    } label: {
+                        Text("Sort")
+                            .font(.title2)
                             .fontWeight(.bold)
-                            .frame(width: 30, height: 30)
-                            .background(Color.yellow)
-                            .clipShape(Circle())
+                    }
+                    
+                    Button {
+                        print("back")
+                    } label: {
+                        HStack {
+                            Image(systemName: "arrow.left")
+                                .font(.system(size: 30))
+                        }
+                    }
+                    
+                    Button {
+                        print("back")
+                    } label: {
+                        HStack {
+                            Image(systemName: "arrow.right")
+                                .font(.system(size: 30))
+                        }
+                    }
+
+                }
+                .padding(.horizontal)
+                
+                // MARK: - List
+                
+                ScrollView(.horizontal) {
+                    LazyHStack {
+                        ForEach(viewModel.array) { item in
+                            ItemView(item: item)
+                        }
                     }
                 }
   
-
                 Spacer()
             }
             .navigationTitle("Swift sorting")
         }
     }
 }
+
+// MARK: - Preview
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

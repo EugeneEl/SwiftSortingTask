@@ -13,6 +13,7 @@
 		44789302299FC1E00062572F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44789301299FC1E00062572F /* Preview Assets.xcassets */; };
 		4478930C299FC2E60062572F /* SortViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478930B299FC2E60062572F /* SortViewModel.swift */; };
 		4478930F299FC6B50062572F /* SortingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478930E299FC6B50062572F /* SortingItem.swift */; };
+		44789312299FC7B70062572F /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44789311299FC7B70062572F /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		44789301299FC1E00062572F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4478930B299FC2E60062572F /* SortViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewModel.swift; sourceTree = "<group>"; };
 		4478930E299FC6B50062572F /* SortingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingItem.swift; sourceTree = "<group>"; };
+		44789311299FC7B70062572F /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		44789309299FC29E0062572F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44789310299FC7A90062572F /* ItemView */,
 				4478930A299FC2AC0062572F /* ContentView */,
 			);
 			path = Views;
@@ -103,6 +106,14 @@
 				4478930E299FC6B50062572F /* SortingItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		44789310299FC7A90062572F /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				44789311299FC7B70062572F /* ItemView.swift */,
+			);
+			path = ItemView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 				447892FD299FC1DE0062572F /* ContentView.swift in Sources */,
 				4478930F299FC6B50062572F /* SortingItem.swift in Sources */,
 				4478930C299FC2E60062572F /* SortViewModel.swift in Sources */,
+				44789312299FC7B70062572F /* ItemView.swift in Sources */,
 				447892FB299FC1DE0062572F /* SwiftSortingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
