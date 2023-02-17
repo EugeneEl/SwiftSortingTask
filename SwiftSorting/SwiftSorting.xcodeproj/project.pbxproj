@@ -85,8 +85,8 @@
 		44789309299FC29E0062572F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				44789310299FC7A90062572F /* ItemView */,
 				4478930A299FC2AC0062572F /* ContentView */,
+				44789310299FC7A90062572F /* ItemView */,
 			);
 			path = Views;
 			sourceTree = "<group>";

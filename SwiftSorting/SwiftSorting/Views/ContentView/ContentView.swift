@@ -38,6 +38,7 @@ struct ContentView: View {
                 
                 HStack {
                     Button {
+                        viewModel.sortArray()
                         print("start")
                     } label: {
                         Text("Sort")
@@ -48,19 +49,23 @@ struct ContentView: View {
                     Button {
                         print("back")
                     } label: {
-                        HStack {
                             Image(systemName: "arrow.left")
                                 .font(.system(size: 30))
-                        }
                     }
                     
                     Button {
                         print("back")
                     } label: {
-                        HStack {
                             Image(systemName: "arrow.right")
                                 .font(.system(size: 30))
-                        }
+                    }
+                    
+                    Button {
+                        viewModel.clear()
+                    } label: {
+                            Image(systemName: "trash")
+                                .font(.system(size: 30))
+
                     }
 
                 }
