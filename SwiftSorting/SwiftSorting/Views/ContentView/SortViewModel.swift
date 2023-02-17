@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 class SortViewModel: ObservableObject {
     
@@ -16,6 +17,8 @@ class SortViewModel: ObservableObject {
     
     let textFieldPlaceholder = "Please enter a new value"
     
+    var sortStepCounter = 0
+
     // MARK: - Public
     
     func clear() {
@@ -31,7 +34,7 @@ class SortViewModel: ObservableObject {
     }
     
     func sortArray() {
-        var last_position = array.count - 1
+        let last_position = array.count - 1
         var swap = true
         while swap == true {
             swap = false

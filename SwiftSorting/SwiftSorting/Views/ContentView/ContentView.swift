@@ -27,7 +27,9 @@ struct ContentView: View {
                         .keyboardType(.numberPad)
                     
                     Button {
-                        viewModel.addValue()
+                        withAnimation {
+                            viewModel.addValue()
+                        }
                     } label: {
                         Text("Add")
                     }.buttonStyle(.borderedProminent)
