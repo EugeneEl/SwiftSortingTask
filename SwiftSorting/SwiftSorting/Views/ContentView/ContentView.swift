@@ -80,8 +80,8 @@ struct ContentView: View {
                         ForEach(viewModel.array) { item in
                             ItemView(item: item)
                         }
-                    }
-                }
+                    }.frame(maxHeight: 50)
+                }.padding(.horizontal)
   
                 Spacer()
             }

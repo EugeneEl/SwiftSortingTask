@@ -17,8 +17,8 @@ class SortViewModel: ObservableObject {
     
     let textFieldPlaceholder = "Please enter a new value"
     
-    var sortStepCounter = 0
-
+    private var sortStepCounter = 0
+    
     // MARK: - Public
     
     func clear() {

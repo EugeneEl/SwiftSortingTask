@@ -57,9 +57,9 @@
 		447892F9299FC1DE0062572F /* SwiftSorting */ = {
 			isa = PBXGroup;
 			children = (
-				4478930D299FC6A30062572F /* Model */,
 				44789308299FC2930062572F /* App */,
 				44789309299FC29E0062572F /* Views */,
+				4478930D299FC6A30062572F /* Model */,
 				447892FE299FC1E00062572F /* Assets.xcassets */,
 				44789300299FC1E00062572F /* Preview Content */,
 			);
