@@ -49,14 +49,14 @@ struct ContentView: View {
                     }
                     
                     Button {
-                        print("back")
+                        viewModel.stepBack()
                     } label: {
                             Image(systemName: "arrow.left")
                                 .font(.system(size: 30))
                     }
                     
                     Button {
-                        print("back")
+                        viewModel.stepForward()
                     } label: {
                             Image(systemName: "arrow.right")
                                 .font(.system(size: 30))
