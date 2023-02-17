@@ -31,8 +31,7 @@ class SortViewModel: ObservableObject {
     private var currentIndex = 0
     private lazy var endIndex = array.count - 1
     private var didPerformSwap = false
-    
-    var timer: Timer?
+    private var timer: Timer?
     
     // MARK: - Public
     
@@ -63,12 +62,12 @@ class SortViewModel: ObservableObject {
     }
     
     func stepBack() {
-        state = .paused
+        pause()
         state = .restarting(endIndex: currentIndex - 1)
     }
     
     func stepForward() {
-        state = .paused
+        pause()
         state = .restarting(endIndex: currentIndex + 1)
     }
     
